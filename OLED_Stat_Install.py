@@ -23,7 +23,7 @@ def default_python_version(numeric=True):
 def get_python3_version(numeric=True):
     version = shell.run_command("python3 -c 'import platform; print(platform.python_version())'", suppress_message=True, return_output=True)
     if numeric:
-        return 3.9.2
+        return 3.9
     return version
 
 def check_blinka_python_version():
